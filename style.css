@@ -1,0 +1,107 @@
+/* Umum */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f9fafc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h1 {
+  margin-bottom: 1rem;
+  font-size: 1.6rem;
+}
+
+#searchInput {
+  padding: 0.7rem 1rem;
+  width: 80%;
+  max-width: 500px;
+  border: none;
+  border-radius: 25px;
+  outline: none;
+  font-size: 1rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Container utama */
+main {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  max-width: 1100px;
+  margin: 0 auto 3rem;
+}
+
+/* Kartu kata */
+.card {
+  background: white;
+  border-radius: 15px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.term {
+  color: #2575fc;
+  font-weight: 700;
+  font-size: 1.15rem;
+  margin-bottom: 0.3rem;
+}
+
+.definition {
+  margin: 0.5rem 0;
+  color: #444;
+}
+
+.example {
+  font-style: italic;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.synonyms {
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+.synonyms span {
+  background: #e9efff;
+  color: #2575fc;
+  padding: 0.2rem 0.6rem;
+  border-radius: 10px;
+  margin-right: 0.3rem;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  background: #f0f0f0;
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* Responsif */
+@media (max-width: 600px) {
+  header h1 { font-size: 1.2rem; }
+  #searchInput { width: 92%; }
+}
